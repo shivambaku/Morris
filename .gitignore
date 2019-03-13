@@ -46,10 +46,9 @@ compile_commands.json
 CTestTestfile.cmake
 
 # vscode
-.vscode/
+.vscode
 
 # Folders
 build/
 bin/
 node_modules/
-ML-UI-darwin-x64/
