@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="src/css/style.css">
+<link rel="stylesheet" href="src/css/dropdown.css">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Nine Men Morris</title>
+</head>
+
+<div id="react_container"></div>
+
+<body>
+  <script>
+    //require('./renderer.js');
+
+    import * as React from 'react';
+    import * as ReactDOM from 'react-dom';
+    import App from './src/js/App';
+
+    ReactDOM.render(<App/>, document.getElementById('react_container'));
+  </script>
+</body>
+
+</html>

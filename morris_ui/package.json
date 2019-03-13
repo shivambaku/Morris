@@ -1,0 +1,35 @@
+{
+  "name": "ml-ui",
+  "productName": "ML-UI",
+  "version": "1.0.0",
+  "description": "Machine Learning UI",
+  "main": "init.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . --asar"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "DigiPen",
+  "devDependencies": {
+    "electron-packager": "^9.1.0",
+    "electron-rebuild": "^1.7.3"
+  },
+  "dependencies": {
+    "auto-bind": "^1.2.1",
+    "bootstrap": "^4.1.1",
+    "d3": "^5.5.0",
+    "electron": "^2.0.2",
+    "electron-prebuilt-compile": "^2.0.2",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "reactstrap": "^6.1.0"
+  }
+}
