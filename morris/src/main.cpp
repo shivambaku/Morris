@@ -15,10 +15,10 @@ void Simulate(unsigned total_games = 100) {
 
 	//auto l_algorithm = MinMax<GameType, StateType, MoveType>();
 	//auto l_algorithm = RandomPlay<GameType, StateType>();
-	auto l_algorithm = MonteCarloTreeSearch<GameType, StateType, 2>(10000);
+	auto l_algorithm = MonteCarloTreeSearch<GameType, StateType, 2>(1000);
 
 	//auto r_algorithm = RandomPlay<GameType, StateType>();
-	auto r_algorithm = MonteCarloTreeSearch<GameType, StateType, 2>(10000);
+	auto r_algorithm = MonteCarloTreeSearch<GameType, StateType, 2>(1000);
 
 	auto initial_state = []() { return StateType(RandomPlayer()); };
 
