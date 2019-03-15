@@ -31,8 +31,8 @@ private:
                         boardgame::NineMenMorris,
                         boardgame::NineMenMorrisState,
                         boardgame::NineMenMorrisMove,
-                        algorithm::MonteCarloTreeSearch<boardgame::NineMenMorris, boardgame::NineMenMorrisState>,
-                        algorithm::MonteCarloTreeSearch<boardgame::NineMenMorris, boardgame::NineMenMorrisState> > * simulation_;
+                        algorithm::MonteCarloTreeSearch<boardgame::NineMenMorris, boardgame::NineMenMorrisState, 2>,
+                        algorithm::MonteCarloTreeSearch<boardgame::NineMenMorris, boardgame::NineMenMorrisState, 2> > * simulation_;
 
     friend class napi_helper;
 };

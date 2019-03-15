@@ -52,3 +52,5 @@ CTestTestfile.cmake
 build/
 bin/
 node_modules/
+inc/
+lib/

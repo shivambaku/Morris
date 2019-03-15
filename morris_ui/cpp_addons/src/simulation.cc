@@ -9,14 +9,14 @@ Simulation::Simulation() :
     auto initial_state = []() { return boardgame::NineMenMorrisState(boardgame::Player::kRightPlayer); };
 
     //auto l_algorithm = algorithm::RandomPlay<boardgame::NineMenMorris, boardgame::NineMenMorrisState>();
-    auto algorithm = algorithm::MonteCarloTreeSearch<boardgame::NineMenMorris, boardgame::NineMenMorrisState>(150000, 7000);
+    auto algorithm = algorithm::MonteCarloTreeSearch<boardgame::NineMenMorris, boardgame::NineMenMorrisState, 2>(150000, 7000);
 
     simulation_ = new boardgame::Simulation<
                             boardgame::NineMenMorris,
                             boardgame::NineMenMorrisState,
                             boardgame::NineMenMorrisMove,
-                            algorithm::MonteCarloTreeSearch<boardgame::NineMenMorris, boardgame::NineMenMorrisState>,
-                            algorithm::MonteCarloTreeSearch<boardgame::NineMenMorris, boardgame::NineMenMorrisState> >
+                            algorithm::MonteCarloTreeSearch<boardgame::NineMenMorris, boardgame::NineMenMorrisState, 2>,
+                            algorithm::MonteCarloTreeSearch<boardgame::NineMenMorris, boardgame::NineMenMorrisState, 2> >
                             (initial_state(), algorithm, algorithm);
 }
 
