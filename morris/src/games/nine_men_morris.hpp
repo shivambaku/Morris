@@ -1,5 +1,5 @@
-#ifndef nine_men_morris_hpp
-#define nine_men_morris_hpp
+#ifndef MORRIS_GAMES_NINE_MEN_MORRIS_HPP_
+#define MORRIS_GAMES_NINE_MEN_MORRIS_HPP_
 
 #include "simulation.hpp"
 
@@ -93,4 +93,4 @@ private:
 
 } // namespace boardgame
 
-#endif /* nine_men_morris_hpp */
+#endif /* MORRIS_GAMES_NINE_MEN_MORRIS_HPP_ */

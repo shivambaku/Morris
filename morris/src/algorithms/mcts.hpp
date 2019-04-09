@@ -1,5 +1,5 @@
-#ifndef mcts_h
-#define mcts_h
+#ifndef MORRIS_ALGORITHMS_MCTS_HPP_
+#define MORRIS_ALGORITHMS_MCTS_HPP_
 
 namespace algorithm {
 
@@ -216,6 +216,6 @@ private:
 
 } // namespace algorithm
 
-#endif /* mcts_h */
+#endif /* MORRIS_ALGORITHMS_MCTS_HPP_ */
 
 

@@ -1,5 +1,5 @@
-#ifndef min_max_h
-#define min_max_h
+#ifndef MORRIS_ALGORITHMS_MIN_MAX_HPP_
+#define MORRIS_ALGORITHMS_MIN_MAX_HPP_
 
 template<class GameType, class StateType, class MoveType>
 class MinMax {
@@ -67,6 +67,6 @@ private:
 	unsigned max_depth_;
 };
 
-#endif /* min_max_h */
+#endif /* MORRIS_ALGORITHMS_MIN_MAX_HPP_ */
 
 

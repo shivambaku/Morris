@@ -51,8 +51,8 @@ int main(int /*argc*/, const char * /*argv*/[]) {
 	auto start = std::chrono::high_resolution_clock::now();
 
 	//Simulate<NineMenMorris, NineMenMorrisState, NineMenMorrisMove>(10);
-	//Simulate<TicTacToe, TicTacToeState, TicTacToeMove>(100);
-	Simulate<Connect4, Connect4State, Connect4Move>(100);
+	Simulate<TicTacToe, TicTacToeState, TicTacToeMove>(100);
+	//Simulate<Connect4, Connect4State, Connect4Move>(100);
 
 	auto end = std::chrono::high_resolution_clock::now();
 

@@ -1,5 +1,5 @@
-#ifndef connect_4_hpp
-#define connect_4_hpp
+#ifndef MORRIS_GAMES_CONNECT_4_HPP_
+#define MORRIS_GAMES_CONNECT_4_HPP_
 
 #include "simulation.hpp"
 
@@ -41,4 +41,4 @@ public:
 
 } // namespace boardgame
 
-#endif /* connect_4_hpp */
+#endif /* MORRIS_GAMES_CONNECT_4_HPP_ */

@@ -1,5 +1,5 @@
-#ifndef tic_tac_toe_hpp
-#define tic_tac_toe_hpp
+#ifndef MORRIS_GAMES_TIC_TAC_TOE_HPP
+#define MORRIS_GAMES_TIC_TAC_TOE_HPP
 
 #include "simulation.hpp"
 
@@ -14,7 +14,7 @@ struct TicTacToeMove {
 
 struct TicTacToeState {
     static const unsigned kBoardSize = 9;
-    
+
     TicTacToeState(Player player) : player(player) {
 		std::fill(board.begin(), board.end(), Player::kNone);
 	}
@@ -32,7 +32,7 @@ struct TicTacToeState {
 		std::cout << PlayerToXO(board[6]) << " | " << PlayerToXO(board[7]) << " | " << PlayerToXO(board[8]) << '\n';
 		std::cout << "Player: " << PlayerToXO(player) << '\n';
 	}
-    
+
     Player player;
 	std::array<Player, kBoardSize> board;
 };
@@ -47,7 +47,7 @@ public:
 	// depth is optional, often winning sooner (smaller depth) has better value
 	static std::tuple<bool, std::array<double, 2>> StateValue(TicTacToeState const &state, unsigned depth = 0);
 
-    // finds all next possible moves 
+    // finds all next possible moves
 	static std::vector<TicTacToeMove> ListMoves(TicTacToeState const &state);
 
     // get the next state using uniform random
@@ -62,6 +62,6 @@ private:
 
 } // namespace boardgame
 
-#endif /* tic_tac_toe_hpp */
+#endif /* MORRIS_GAMES_TIC_TAC_TOE_HPP */
 
 

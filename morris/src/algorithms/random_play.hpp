@@ -1,5 +1,5 @@
-#ifndef RandomPlay_hpp
-#define RandomPlay_hpp
+#ifndef MORRIS_ALGORITHMS_RANDOM_PLAY_HPP_
+#define MORRIS_ALGORITHMS_RANDOM_PLAY_HPP_
 
 namespace algorithm {
 
@@ -15,6 +15,6 @@ private:
 
 } // namespace algorithm
 
-#endif /* RandomPlay_hpp */
+#endif /* MORRIS_ALGORITHMS_RANDOM_PLAY_HPP_ */
 
 
