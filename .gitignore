@@ -54,3 +54,6 @@ bin/
 node_modules/
 inc/
 lib/
+.DS_Store
+package-lock.json
+morris_ui/bin/

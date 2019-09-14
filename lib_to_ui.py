@@ -6,8 +6,14 @@ source_build_path = 'morris/build/'
 destination_inc_path = 'morris_ui/cpp_addons/inc/morris/'
 destination_lib_path = 'morris_ui/cpp_addons/lib/'
 
+# check if the source build directory exist
+if not os.path.isdir(source_build_path):
+    print('No build directory! Please build the project first.')
+    quit()
+
 # different os have different settings
 if os.name == 'nt':
+    source_build_path = os.path.join(source_build_path, 'release')
     lib_extension = '.lib'
 else:
     lib_extension = '.a'

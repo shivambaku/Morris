@@ -6,7 +6,7 @@
   "main": "init.js",
   "scripts": {
     "start": "electron .",
-    "package": "electron-packager . --asar"
+    "package": "electron-packager . --asar --out='./bin/'"
   },
   "keywords": [
     "Electron",
@@ -17,19 +17,19 @@
   ],
   "author": "DigiPen",
   "devDependencies": {
-    "electron-packager": "^9.1.0",
-    "electron-rebuild": "^1.7.3"
+    "electron-packager": "^14.0.6",
+    "electron-rebuild": "^1.8.6"
   },
   "dependencies": {
-    "auto-bind": "^1.2.1",
-    "bootstrap": "^4.1.1",
-    "d3": "^5.5.0",
-    "electron": "^2.0.2",
-    "electron-prebuilt-compile": "^2.0.2",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.3",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
-    "reactstrap": "^6.1.0"
+    "auto-bind": "^2.1.0",
+    "bootstrap": "^4.3.1",
+    "d3": "^5.12.0",
+    "electron": "^6.0.9",
+    "electron-prebuilt-compile": "^4.0.0",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "reactstrap": "^8.0.1"
   }
 }
