@@ -22,9 +22,8 @@ set_target_properties(app PROPERTIES CXX_STANDARD 17)
 
 target_link_libraries(app morris)
 
-# need to add precompiled settings directly in cmake
-
-# On windows
 # mkdir build/
 # cd build/
+
+# Visual studio generator
 # cmake -G "Visual Studio 15 2017 Win64" ..
