@@ -7,7 +7,7 @@ template<class GameType, class StateType>
 class RandomPlay {
 public:
     StateType Compute(StateType const & state) {
-		std::mt19937_64 random_engine;
+        std::mt19937_64 random_engine;
         return GameType::SimulationPolicy(state, random_engine);
     }
 private:

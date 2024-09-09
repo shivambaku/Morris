@@ -43,18 +43,18 @@ public:
         return std::get<1>(winner);
     }
 
-	std::tuple<bool, Player> Move(MoveType const & move) {
-		state_ = GameType::ApplyMove(state_, move);
-		history_.push_back(state_);
-		return GameType::Winner(state_);
-	}
+    std::tuple<bool, Player> Move(MoveType const & move) {
+        state_ = GameType::ApplyMove(state_, move);
+        history_.push_back(state_);
+        return GameType::Winner(state_);
+    }
 
     std::tuple<bool, Player> Move() {
 
         // given the current state, play a move and get a new state
         state_ = state_.player == Player::kLeftPlayer ? l_algorithm_.Compute(state_) : r_algorithm_.Compute(state_);
         history_.push_back(state_);
-		//state_.Print();
+        //state_.Print();
         return GameType::Winner(state_);
     }
 
@@ -62,9 +62,9 @@ public:
         return history_.size();
     }
 
-	StateType State() {
-		return state_;
-	}
+    StateType State() {
+        return state_;
+    }
 private:
     StateType state_;
     LAlgorithmType l_algorithm_;
